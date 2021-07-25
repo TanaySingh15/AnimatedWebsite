@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+      University Website Design
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html">
+          <img src="logo.png">
+        </a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!-- ---contact us----- -->
+
+    <section class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.4076122296074!2d-122.17190768493397!3d37.42747447982411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2a678bea9d%3A0x29cdf01a44fc687f!2sStanford%20University!5e0!3m2!1sen!2sin!4v1627158934553!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span>
+              <h5>XYZ Road, ABC building</h5>
+              <p>London, United Kingdom</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>
+              <h5>+1 987654321</h5>
+              <p>Monday to Saturday</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>
+              <h5>info@infortainment.com</h5>
+              <p>Email your query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="">
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter Your Email" required>
+            <input type="text" placeholder="Enter Your Subject" required>
+            <textarea rows="8" required placeholder="Message"></textarea>
+            <button class="hero-btn red-btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- -------Footer------ -->
+    <section class="footer">
+      <div class="icons">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Tanay Singh</p>
+    </section>
+
+    <!-- ---------JS for toggle menu--------- -->
+    <script>
+
+      var navLinks=document.getElementById("navLinks");
+
+      function showMenu(){
+        navLinks.style.right="0";
+      }
+
+      function hideMenu(){
+        navLinks.style.right="-200px";
+      }
+    </script>
+  </body>
+</html>
